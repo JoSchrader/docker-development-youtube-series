@@ -36,10 +36,10 @@ certmanager-control-plane   Ready    control-plane   4m25s   v1.34.0
 #       this is now upgraded to use helm instead using the new OCI repo
 
 # install cert-manager 
-CHART_VERSION="v1.19.2"
+CHART_VERSION="v1.21.3"
 
 # checkout the values
-helm show values oci://quay.io/jetstack/charts/cert-manager > kubernetes/cert-manager/default-values.yaml
+helm show values oci://quay.io/jetstack/charts/cert-manager:${CHART_VERSION} > kubernetes/cert-manager/default-values.yaml
 
 helm install \
   cert-manager oci://quay.io/jetstack/charts/cert-manager \
@@ -47,7 +47,7 @@ helm install \
   --namespace cert-manager \
   --create-namespace \
   --set crds.enabled=true \
-  --set config.enableGatewayAPI=true
+  --set config.gatewayAPI.enabled=true
 ```
 
 ## Cert Manager Resources
