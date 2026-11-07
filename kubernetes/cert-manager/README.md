@@ -1,6 +1,6 @@
 # Introduction to cert-manager for Kubernetes
 
-<a href="https://youtu.be/hoLUigg4V18" title="certmanager"><img src="https://i.ytimg.com/vi/hoLUigg4V18/hqdefault.jpg" width="20%" alt="introduction to certmanager" /></a>
+<a href="https://youtu.be/XAcmHWZ02VI" title="certmanager"><img src="https://i.ytimg.com/vi/XAcmHWZ02VI/hqdefault.jpg" width="20%" alt="Free SSL for kubernetes with cert-manager" /></a>
 
 ## We need a Kubernetes cluster
 
